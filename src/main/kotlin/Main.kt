@@ -23,7 +23,7 @@ fun takeGuess(): List<Int> {
     val newGuess = mutableListOf<Int>()
     while (i < 3) {
         print("${i + 1}번째 숫자를 입력하세요: ")
-        val guessNumber = readLine()?.toIntOrNull() ?: continue // guessNumber에 입력값 정수로 받고 컨티뉴 <-표현 검토요청
+        val guessNumber = readln()?.toIntOrNull() ?: continue // guessNumber에 입력값 정수로 받고 컨티뉴 <-표현 검토요청
 
         if (i == 0 && guessNumber == 0) {
             println("첫 번째는 0이 올 수 없어요. 다시 입력하세요")
